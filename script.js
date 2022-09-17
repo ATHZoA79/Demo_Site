@@ -28,7 +28,8 @@ fetch(url)
   let local = myData.records.location;
   console.log(local);
   weatherData = local;
-  CITIES.addEventListener('click', (e) => {
+  CITIES.addEventListener('mousemove', (e) => {
+    // console.log('Mouse Entered.');
     let l_name = e.target.dataset.nameZh;
     local.forEach((local) => {
       if (local.locationName == l_name) {
@@ -55,8 +56,12 @@ fetch(url)
   });
 });
 
-console.log(weatherData);
+// console.log(weatherData);
 
+CITIES.addEventListener('mouseleave', ()=> {
+  INFO.classList.remove('show');
+  INFO.classList.add('hide');
+})
 // CITIES.onclick = (e) => {
 //   console.log(e.target.dataset.nameZh);
 // }

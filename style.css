@@ -25,11 +25,11 @@ body {
   height: calc(100vh - 80px);
   padding: 20vh 50px;
   /* background: #555; */
-  transition: .25s;
 }
 #info {
   padding: 20px 0 0;
   border-radius: 0 20px 20px 0;
+  transition: .25s;
 }
 
 #info :is(h1, p) {
@@ -76,11 +76,9 @@ footer {
 }
 .hide {
   opacity: 0;
-  transition: .1s;
 }
 .show {
   opacity: 1 ;
-  transition: .1s;
 }
 .sunny {
   background: linear-gradient(90deg, transparent, #a70);
