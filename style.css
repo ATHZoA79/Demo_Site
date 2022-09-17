@@ -16,29 +16,30 @@ body {
 /* card container */
 .container {
   width: 100%;
-  padding: 0 6%;
+  padding: 0 4%;
   display: flex;
   justify-content: center;
 }
 .info-box {
-  width: 400px;
+  width: calc(100% - 800px);
   height: calc(100vh - 80px);
-  padding: 20vh 50px;
+  padding: 20vh 0 20vh 50px;
   /* background: #555; */
 }
 #info {
-  padding: 20px 0 0;
+  padding: 20px 0 0 50px;
   border-radius: 0 20px 20px 0;
-  transition: .25s;
+  border-left: 5px solid #ccc;
+  transition: 0.25s;
 }
 
 #info :is(h1, p) {
   padding: 0 0 16px;
   color: #ccc;
-  transition: .25s;
+  transition: 0.25s;
 }
 #info hr {
-  width: 70%;
+  width: 50%;
   margin-bottom: 12px;
 }
 #info p {
@@ -67,7 +68,7 @@ footer {
   position: absolute;
   bottom: 0;
   text-align: center;
-  background: rgba(0, 0, 0, .3);
+  background: rgba(0, 0, 0, 0.3);
   color: #aaa;
 }
 
@@ -78,14 +79,29 @@ footer {
   opacity: 0;
 }
 .show {
-  opacity: 1 ;
+  opacity: 1;
 }
 .sunny {
-  background: linear-gradient(90deg, transparent, #a70);
+  background: linear-gradient(
+    90deg,
+    rgb(116, 81, 0),
+    rgb(116, 81, 0),
+    transparent
+  );
 }
 .cloudy {
-  background: linear-gradient(90deg, transparent, rgb(20, 136, 87));
+  background: linear-gradient(
+    90deg,
+    rgb(13, 102, 65),
+    rgb(13, 102, 65),
+    transparent
+  );
 }
 .rainy {
-  background: linear-gradient(90deg, transparent, rgb(43, 66, 143));
+  background: linear-gradient(
+    90deg,
+    rgb(30, 51, 117),
+    rgb(30, 51, 117),
+    transparent
+  );
 }
